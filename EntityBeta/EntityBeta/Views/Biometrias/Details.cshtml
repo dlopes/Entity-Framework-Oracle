@@ -1,0 +1,42 @@
+﻿@model EntityBeta.Models.Cadastro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Biometria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_PESSOA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_PESSOA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATA_INCLUSAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATA_INCLUSAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BLOB_IMAGEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BLOB_IMAGEM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
